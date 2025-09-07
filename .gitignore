@@ -1,0 +1,88 @@
+# 详见 https://github.com/github/gitignore 获取更多特定语言/环境的模板
+
+### 常见通用忽略规则 ###
+# 忽略所有平台的隐藏系统文件（如 macOS 的 .DS_Store[4,5](@ref), Windows 的 Thumbs.db[8](@ref)）
+.DS_Store
+[Tt]humbs.db
+Desktop.ini
+
+# 忽略所有平台的隐藏文件夹（如 macOS 的 __MACOSX[5](@ref)）
+__MACOSX/
+
+### 日志文件 ###
+*.log[1,3](@ref)
+logs/[1](@ref)
+[Tt]emp/
+
+### 编译产物与依赖 ###
+# 通用构建输出目录
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+
+# 包依赖目录 (如 Node.js, .NET NuGet)
+node_modules/[4](@ref)
+[Pp]ackages/[6](@ref)
+*.nupkg[4](@ref)
+
+### 开发环境与IDE ###
+# JetBrains IDE (IntelliJ, WebStorm, PyCharm, Android Studio)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio Code
+.vscode/[3,6](@ref)
+.vscode/settings.json
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/[4](@ref)
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+### 操作系统生成的文件 ###
+# Windows
+ehthumbs.db
+
+# Linux
+*~
+
+# macOS
+.AppleDouble
+.LSOverride
+
+### 其他常见忽略项 ###
+# 压缩包
+*.zip
+*.rar
+*.7z
+
+# 备份文件
+*.bak
+*.tmp
+*.swp
+*~[7](@ref)
+
+# 本地环境或配置文件（常含敏感信息，如数据库密码、API密钥）[4](@ref)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+appsettings.Development.json
+
+# 覆盖率报告
+coverage/[4](@ref)
+*.lcov
+
+# 其他
+.ionide/[4](@ref)
